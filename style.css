@@ -18,18 +18,42 @@ header{
 nav{
     grid-area: nav;
     background-color: #a07b08;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    border-radius: 25px 75px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.barra{
+    border-radius: 25px 75px;
+    width: 10%;
+}
+.barra:hover{
+    background-color: cornsilk;
 }
 section{
     grid-area: section;
     background-color: #0f91dc;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    
 }
 aside{
     grid-area: aside;
     background-color: #d62d7c;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: center;
 }
 footer{
     grid-area: footer;
     background-color: #302dd6;
+    display: flex;
+    justify-content: space-between;
 }
 header,nav,section,aside,footer{
     padding: 5px;
